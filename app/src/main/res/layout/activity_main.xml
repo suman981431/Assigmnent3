@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="60dp"
+        android:textSize="30dp"
+        android:id="@+id/eid"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_marginLeft="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/eid"
+        android:hint="Enter your Email"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/emailbtn"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:textSize="30dp"
+        android:layout_below="@+id/emailbtn"
+        android:id="@+id/passbtn"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_marginLeft="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/passbtn"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/textpass"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:background="@color/black"
+        android:layout_below="@id/textpass"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logbtn"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you have an account or not?"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:layout_below="@+id/logbtn"
+        android:id="@+id/dontbtn"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        android:layout_below="@id/dontbtn"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/signbtn"/>
+
+
+</RelativeLayout>
